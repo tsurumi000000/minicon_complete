@@ -5,6 +5,7 @@
     <tr>
       <th>Category</th>
       <th>Title</th>
+      <th>image</th>
       <th>Location</th>
       <th>Start At</th>
       <th>Ticket Price</th>
@@ -18,6 +19,7 @@
       <tr>
         <td><%= event.event_category.name %></td>
         <td><%= event.title %></td>
+        <Td><%= event.image %></Td>
         <td><%= event.location %></td>
         <td><%= event.start_at.strftime('%Y/%m/%d %H:%M') %></td>
         <td><%= event.ticket_price %>円</td>

@@ -10,4 +10,7 @@ class Event < ApplicationRecord
   validates_each :start_at do |record, attr, value|
     record.errors.add(attr, 'must be at least a week from now') if value < Time.current + 1.week
   end
+  mount_uploader :image, ImagesUploader
+  
+  
 end

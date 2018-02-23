@@ -12,9 +12,16 @@
   </div>
   
   <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :event_image %>
+  </div>
+  
+  <div class="field">
     <%= form.label :location %>
     <%= form.text_field :location, id: :event_location %>
   </div>
+
+  
   
   <div class="field">
     <%= form.label :start_at %>
